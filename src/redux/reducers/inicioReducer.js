@@ -1,7 +1,7 @@
 import store from "../store";
-import { inicializar_ciudad, INIT_CIUDAD } from '../actions/inicioAction'
+import { inicializar_ciudad, inicializar_pais, INIT_CIUDAD } from '../actions/inicioAction'
 
-fetch('http://192.168.0.15:8080/Temperatura/rest/ciudades', { method: 'POST', body: '' }).then(res => res.json())
+fetch('http://192.168.0.16:8080/Temperatura/rest/ciudades', { method: 'POST', body: '' }).then(res => res.json())
     .then(
         (result) => {
             console.log(result);
@@ -12,6 +12,7 @@ fetch('http://192.168.0.15:8080/Temperatura/rest/ciudades', { method: 'POST', bo
 
         }
     )
+
 
 const default_ciudades = {
     ciudades: []

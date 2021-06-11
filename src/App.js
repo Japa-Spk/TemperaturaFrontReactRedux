@@ -4,6 +4,8 @@ import Header from './components/header/header'
 import Inicio from './components/inicio/inicio'
 import Formulario from './components/formulario/formulario'
 import Estadistica from './components/estadistica/estadistica'
+import Login from './components/auth/login/login'
+import Register from './components/auth/register/register'
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -37,6 +39,12 @@ function App() {
             </Route>
             <Route path="/estadistica">
               <Estadistica />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
             </Route>
           </Switch>
           <Footer />
