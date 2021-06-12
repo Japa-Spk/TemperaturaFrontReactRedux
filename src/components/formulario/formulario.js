@@ -47,6 +47,7 @@ const Formulario = () => {
 
     var cancelarRegistro = () => {
         newRegistroAuto({ adicionando: false });
+        newRegistro({ adicionando: false });
     };
     //Armado de JSON para enviar a guardar registro en BACKEND
     var guardarRegistro = () => {
